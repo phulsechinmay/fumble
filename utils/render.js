@@ -1,11 +1,9 @@
-
-const renderEjsPage = (pageName, filepath, vars) => (req, res) => 
+const renderEjsPage = (pageName, filepath, vars) => (req, res) =>
   res.render(filepath, {
-    ...req,
-    vars,
-    pageName
+    ...vars,
+    pageName,
   });
 
 module.exports = {
-  renderEjsPage
-}
+  renderEjsPage,
+};

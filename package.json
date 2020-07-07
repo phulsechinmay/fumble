@@ -4,7 +4,10 @@
   "description": "Starter template for ejs / scss projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node-sass scss/style.scss static/css/style.css && run-p dev:server dev:sass",
+    "dev:server": "node server.js",
+    "dev:sass": "node-sass -w scss/style.scss static/css/style.css"
   },
   "author": "phulsechinmay",
   "license": "ISC",
@@ -16,5 +19,8 @@
     "ncp": "^2.0.0",
     "node-fetch": "^2.6.0",
     "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }
