@@ -3,3 +3,30 @@
 
 // Import any custom scss files
 @import "./navbar.scss";
+
+.heading {   
+  margin-top: 15vh;
+  font-size: 15vw;
+  background: -webkit-linear-gradient(right, #ff9994, #9dabdd);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: color-gradient 7s infinite linear;
+}
+
+@keyframes color-gradient {
+  0% {-webkit-filter: hue-rotate(0deg);}
+  100% {-webkit-filter: hue-rotate(-360deg);}
+}
+
+.subtext {
+  color: #666;
+}
+
+.github-link {
+  font-size: 40px;
+  color: #666;
+
+  &:hover {
+    color: #666;
+  }
+}

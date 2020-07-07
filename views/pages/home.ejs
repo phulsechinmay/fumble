@@ -5,11 +5,14 @@
   <body>
     <%- include("../partials/navbar"); %>
 
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <h1><%= heading %></h1>
-      </div>
+    <div class="container mt-5 text-center">
+      <h1 class="heading"><%= heading %></h1>
+      <h4 class="my-2 subtext">Renouncing unnecessary setup since 2020.</h4>
+      <a class="github-link" href="<%= githubLink %>" target="_blank">
+        <i class="my-5 fab fa-github"></i>
+      </a>
     </div>
 
+    <%- include("../partials/scripts"); %>
   </body>
 </html>

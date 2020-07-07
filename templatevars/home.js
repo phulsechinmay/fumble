@@ -1,3 +1,4 @@
 module.exports = {
-  heading: "Fumble"
+  heading: "Fumble",
+  githubLink: "https://github.com/phulsechinmay/fumble"
 }
