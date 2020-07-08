@@ -6,7 +6,11 @@
   "scripts": {
     "dev": "node-sass scss/style.scss static/css/style.css && run-p dev:server dev:sass",
     "dev:server": "node server.js",
-    "dev:sass": "node-sass -w scss/style.scss static/css/style.css"
+    "dev:sass": "node-sass -w scss/style.scss static/css/style.css",
+    "build": "npm run clean && npm run build:sass && npm run build:static",
+    "build:static": "node utils/build.js",
+    "build:sass": "node-sass scss/style.scss static/css/style.css --output-style compressed",
+    "clean": "rm -rf build"
   },
   "author": "phulsechinmay",
   "license": "ISC",

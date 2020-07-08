@@ -118,5 +118,5 @@ dist
 *.DS_Store
 
 # public
-/public
+/build
 /static/css/style.css
