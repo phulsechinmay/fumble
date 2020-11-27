@@ -7,10 +7,12 @@
 .heading {   
   margin-top: 15vh;
   font-size: 15vw;
-  background: -webkit-linear-gradient(right, #ff9994, #9dabdd);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #ff9994, #9dabdd);
   animation: color-gradient 7s infinite linear;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @keyframes color-gradient {
